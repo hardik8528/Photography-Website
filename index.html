@@ -16,7 +16,13 @@
     <header id="main-head">
         <nav>
             <h1 class="animate__animated animate__backInRight">Elena Joy</h1>
-            <ul class="nav-links">
+            <div class="hamburger" onclick="burger()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-links" id="nav-link">
+                <li><a href="#hero">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -25,7 +31,7 @@
     </header>
 
     <main>
-        <section class="hero">
+        <section class="hero" id="hero">
             <div class="hero-intro flex">
                 <h2>Elena Joy <br> Photography</h2>
                 <p>Elena Joy is an experienced photographer with expertise in all mediums. Portraits, Weddings, Parties,
@@ -79,7 +85,7 @@
                 <h2>Get in <br> <span>touch.</span></h2>
                 <form>
                     <label for="email">Your Email:</label>
-                    <input type="email" name="email" id="email" required>
+                    <input type="email" name="email" id="email" required minlength='10' maxlength="50">
                     <button type="submit">Submit</button>
                 </form>
             </div>
@@ -91,6 +97,7 @@
         
         
     </main>
+    <script src="/burger.js"></script>
 </body>
 
 </html>
